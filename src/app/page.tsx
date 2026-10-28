@@ -22,7 +22,7 @@ export default function Home() {
           <section className="p-8">
             <h2 className="font-display text-5xl font-light">{finale.headline}</h2>
             <p className="mt-4">{finale.sub}</p>
-            <a className="mt-8 inline-block underline" href={`mailto:${site.contact.email}`}>{finale.secondary}</a>
+            <a className="mt-8 inline-block underline" href={`mailto:${site.contact.email}`}>{finale.primary}</a>
           </section>
         </div>
       </noscript>
