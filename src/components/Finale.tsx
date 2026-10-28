@@ -3,14 +3,14 @@
 import { motion } from "framer-motion";
 import { finale, site } from "@/content/site";
 
-type Props = { onEnquire: () => void; onDiscover: () => void };
+type Props = { onDiscover: () => void };
 
 const rise = {
   hidden: { opacity: 0, y: 28 },
   show: (i: number) => ({ opacity: 1, y: 0, transition: { delay: 0.12 * i, duration: 1.1, ease: [0.22, 1, 0.36, 1] as const } }),
 };
 
-export default function Finale({ onEnquire, onDiscover }: Props) {
+export default function Finale({ onDiscover }: Props) {
   return (
     <section id="enquire" aria-labelledby="finale-title" className="relative bg-deep text-ivory">
       {/* Ink edge where the film meets the page */}
@@ -51,9 +51,8 @@ export default function Finale({ onEnquire, onDiscover }: Props) {
           <button type="button" onClick={onDiscover} className="btn-line-light">
             {finale.primary}
           </button>
-          <button type="button" onClick={onEnquire} className="btn-solid-light">
-            {finale.secondary}
-          </button>
+          <a href={site.contact.phoneHref} className="btn-solid-light">Call</a>
+          <a href={`mailto:${site.contact.email}`} className="btn-line-light">Mail</a>
         </motion.div>
       </div>
 

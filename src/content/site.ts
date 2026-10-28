@@ -3,15 +3,15 @@
 
 export const site = {
   name: "The Reserve",
-  region: "Kerala, India",
+  region: "Kerala, India · by invitation",
   tagline: "Private residences · mobility · experiences",
   contact: {
     address: "Kochi, Kerala, India",
-    phone: "+91 484 000 0000",
-    phoneHref: "tel:+914840000000",
-    email: "concierge@thereserve.in",
-    instagramHandle: "@thereserve.kerala",
-    instagramUrl: "https://www.instagram.com/thereserve.kerala/",
+    phone: "+91 9745300666",
+    phoneHref: "tel:+919745300666",
+    email: "mail@georgealex.in",
+    instagramHandle: "@thrsrve",
+    instagramUrl: "https://www.instagram.com/thrsrve/",
   },
   copyrightYear: 2026,
 };
@@ -61,7 +61,6 @@ export const finale = {
   headline: "A different way to experience Kerala.",
   sub: "For those who value time, privacy, and access.",
   primary: "Discover The Reserve",
-  secondary: "Make an Enquiry",
 };
 
 /** Scene still assets, in journey order. `focus` is the subject point in image space (0–1, top-left origin). */

@@ -157,7 +157,7 @@ export default function Experience() {
           <div className="sticky top-0 h-svh w-full overflow-hidden">
             {/* Opening */}
             <div ref={openingRef} className="ui-tone opening-veil pointer-events-none absolute inset-0 flex flex-col items-center justify-center px-6 text-center">
-              <p className="label-caps mb-6 text-[10px] opacity-70 md:text-[11px]">{site.region} · Est. by invitation</p>
+              <p className="label-caps mb-6 text-[10px] opacity-70 md:text-[11px]">{site.region} · by invitation</p>
               <h1 className="font-display text-[clamp(3.4rem,13vw,12.5rem)] font-light leading-[0.86] tracking-[0.02em]">
                 The&nbsp;Reserve
               </h1>
@@ -225,7 +225,7 @@ export default function Experience() {
           </div>
         </div>
 
-        <Finale onEnquire={openEnquiry} onDiscover={() => navigate("top")} />
+        <Finale onDiscover={() => navigate("top")} />
       </main>
 
       <EnquiryDialog open={enquiryOpen} onClose={closeEnquiry} />
